@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>LGU Dapa | Login</title>
+
+    <link rel="stylesheet" href="../style.css"> 
+
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+</head>
+
+<body>
+
+    <div class="auth-container">
+
+        <div class="auth-header">
+
+            <div class="auth-icon">
+                <i class="fa-solid fa-right-to-bracket"></i>
+            </div>
+
+            <h2>Welcome Back</h2>
+
+            <p>Login to your LGU Dapa account</p>
+
+        </div>
+
+
+        <form id="loginForm" action="../auth/login.php" method="POST">
+
+            <div class="form-group">
+
+                <label for="loginEmail">
+                    Email Address
+                </label>
+
+                <div class="input-wrapper">
+
+                    <i class="fa-solid fa-envelope"></i>
+
+                    <input
+                        type="email"
+                        id="loginEmail"
+                        name="loginEmail"
+                        placeholder="Enter your email"
+                        required>
+
+                </div>
+
+            </div>
+
+
+            <div class="form-group">
+
+                <label for="loginPassword">
+                    Password
+                </label>
+
+                <div class="input-wrapper">
+
+                    <i class="fa-solid fa-lock"></i>
+
+                    <input
+                        type="password"
+                        id="loginPassword"
+                        name="loginPassword"
+                        placeholder="Enter your password"
+                        required>
+
+                </div>
+
+            </div>
+
+
+            <!-- LOGIN ERROR MESSAGE -->
+            <div id="loginError"
+                 style="
+                    display: none;
+                    color: #dc3545;
+                    background: #ffeaea;
+                    border: 1px solid #dc3545;
+                    padding: 10px;
+                    border-radius: 8px;
+                    margin-bottom: 15px;
+                    text-align: center;
+                    font-size: 14px;
+                 ">
+
+                <i class="fa-solid fa-circle-exclamation"></i>
+                Invalid email or password.
+
+            </div>
+
+
+            <button
+                type="submit"
+                class="auth-submit">
+
+                <i class="fa-solid fa-right-to-bracket"></i>
+
+                Login
+
+            </button>
+
+        </form>
+
+
+        <div class="auth-footer">
+
+            <p>Don't have an account?</p>
+
+            <button
+                type="button"
+                class="auth-switch"
+                onclick="showRegister()">
+
+                Create an account
+
+            </button>
+
+        </div>
+
+    </div>
+
+
+    <div id="here" hidden></div>
+
+
+    <script src="../script.js"></script>
+
+
+    <!-- SHOW LOGIN ERROR -->
+    <script>
+
+        const urlParams = new URLSearchParams(window.location.search);
+        const error = urlParams.get("error");
+        const accountStatus = urlParams.get("account");
+
+        const loginError = document.getElementById("loginError");
+
+        if (accountStatus === "deleted") {
+
+            loginError.innerHTML = `
+                <i class="fa-solid fa-circle-check"></i>
+                Your account has been deleted and can no longer be used to log in.
+            `;
+
+            loginError.style.display = "block";
+
+        }
+
+        if (error === "invalid") {
+
+            loginError.style.display = "block";
+
+        }
+
+        if (error === "empty") {
+
+            loginError.innerHTML = `
+                <i class="fa-solid fa-circle-exclamation"></i>
+                Please enter your email and password.
+            `;
+
+            loginError.style.display = "block";
+
+        }
+
+    </script>
+
+</body>
+
+</html>

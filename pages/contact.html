@@ -1,0 +1,1497 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0">
+
+    <meta name="description"
+        content="Contact LGU Dapa">
+
+    <title>
+        LGU Dapa | Contact
+    </title>
+
+    <link rel="stylesheet" href="../style.css">
+
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+        <style>
+
+/* =====================================================
+   LGU DAPA RESERVATION SYSTEM
+   CONTACT PAGE - PASTEL MODERN UI/UX
+   COOL ANIMATIONS
+===================================================== */
+
+
+/* =====================================================
+   PAGE HERO
+===================================================== */
+
+.inner-page-hero {
+
+    position: relative;
+
+    min-height: 440px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    padding: 90px 7%;
+
+    overflow: hidden;
+
+    color: #334155;
+
+    background:
+
+        radial-gradient(
+            circle at 8% 20%,
+            rgba(186, 230, 253, 0.90),
+            transparent 30%
+        ),
+
+        radial-gradient(
+            circle at 92% 20%,
+            rgba(233, 213, 255, 0.90),
+            transparent 30%
+        ),
+
+        radial-gradient(
+            circle at 75% 100%,
+            rgba(251, 207, 232, 0.80),
+            transparent 32%
+        ),
+
+        radial-gradient(
+            circle at 25% 100%,
+            rgba(187, 247, 208, 0.80),
+            transparent 32%
+        ),
+
+        linear-gradient(
+            135deg,
+            #f0f9ff,
+            #faf5ff,
+            #fdf2f8
+        );
+}
+
+
+/* HERO FLOATING BUBBLE 1 */
+
+.inner-page-hero::before {
+
+    content: "";
+
+    position: absolute;
+
+    width: 400px;
+    height: 400px;
+
+    left: -160px;
+    top: -180px;
+
+    border-radius: 50%;
+
+    background:
+
+        radial-gradient(
+            circle,
+            rgba(186, 230, 253, 0.70),
+            transparent 70%
+        );
+
+    animation:
+        heroBubbleOne 8s ease-in-out infinite;
+
+    pointer-events: none;
+}
+
+
+/* HERO FLOATING BUBBLE 2 */
+
+.inner-page-hero::after {
+
+    content: "";
+
+    position: absolute;
+
+    width: 450px;
+    height: 450px;
+
+    right: -190px;
+    bottom: -230px;
+
+    border-radius: 50%;
+
+    background:
+
+        radial-gradient(
+            circle,
+            rgba(233, 213, 255, 0.70),
+            rgba(251, 207, 232, 0.25),
+            transparent 70%
+        );
+
+    animation:
+        heroBubbleTwo 10s ease-in-out infinite;
+
+    pointer-events: none;
+}
+
+
+/* HERO CONTENT */
+
+.inner-page-content {
+
+    position: relative;
+
+    z-index: 5;
+
+    width: 100%;
+
+    max-width: 850px;
+
+    text-align: center;
+
+    animation:
+        heroContent 1s ease both;
+}
+
+
+/* HERO LABEL */
+
+.inner-page-content .section-label {
+
+    display: inline-block;
+
+    padding: 9px 18px;
+
+    margin-bottom: 20px;
+
+    border-radius: 50px;
+
+    background:
+        rgba(255,255,255,0.65);
+
+    border:
+        1px solid rgba(255,255,255,0.9);
+
+    color: #64748b;
+
+    backdrop-filter:
+        blur(12px);
+
+    box-shadow:
+        0 8px 25px
+        rgba(100,116,139,0.10);
+
+    font-size: 12px;
+
+    font-weight: 800;
+
+    letter-spacing: 2px;
+
+    animation:
+        labelPulse 3s ease-in-out infinite;
+}
+
+
+/* HERO TITLE */
+
+.inner-page-content h1 {
+
+    margin:
+        0 0 18px;
+
+    color: #334155;
+
+    font-size:
+        clamp(44px, 6vw, 68px);
+
+    font-weight: 900;
+
+    letter-spacing: -2px;
+
+    line-height: 1.05;
+
+    text-shadow:
+        0 8px 30px
+        rgba(100,116,139,0.10);
+
+    animation:
+        titleReveal 1s ease both;
+}
+
+
+/* HERO DESCRIPTION */
+
+.inner-page-content p {
+
+    max-width: 650px;
+
+    margin: auto;
+
+    color: #64748b;
+
+    font-size: 18px;
+
+    line-height: 1.8;
+
+    animation:
+        paragraphReveal 1.2s ease both;
+}
+
+
+/* =====================================================
+   MAIN PAGE
+===================================================== */
+
+.page-content {
+
+    position: relative;
+
+    overflow: hidden;
+
+    padding:
+        90px 7%
+        110px;
+
+    background:
+
+        radial-gradient(
+            circle at 0% 15%,
+            rgba(186,230,253,0.65),
+            transparent 28%
+        ),
+
+        radial-gradient(
+            circle at 100% 15%,
+            rgba(233,213,255,0.65),
+            transparent 28%
+        ),
+
+        radial-gradient(
+            circle at 15% 90%,
+            rgba(187,247,208,0.60),
+            transparent 28%
+        ),
+
+        radial-gradient(
+            circle at 85% 90%,
+            rgba(251,207,232,0.60),
+            transparent 28%
+        ),
+
+        radial-gradient(
+            circle at 50% 50%,
+            rgba(254,240,138,0.25),
+            transparent 30%
+        ),
+
+        #fafbff;
+}
+
+
+/* BACKGROUND BUBBLE 1 */
+
+.page-content::before {
+
+    content: "";
+
+    position: absolute;
+
+    width: 320px;
+    height: 320px;
+
+    left: -150px;
+    top: 100px;
+
+    border-radius: 50%;
+
+    background:
+
+        radial-gradient(
+            circle,
+            rgba(186,230,253,0.60),
+            transparent 70%
+        );
+
+    animation:
+        floatingBubbleOne 9s ease-in-out infinite;
+
+    pointer-events: none;
+}
+
+
+/* BACKGROUND BUBBLE 2 */
+
+.page-content::after {
+
+    content: "";
+
+    position: absolute;
+
+    width: 350px;
+    height: 350px;
+
+    right: -160px;
+    bottom: 40px;
+
+    border-radius: 50%;
+
+    background:
+
+        radial-gradient(
+            circle,
+            rgba(233,213,255,0.60),
+            rgba(251,207,232,0.20),
+            transparent 70%
+        );
+
+    animation:
+        floatingBubbleTwo 11s ease-in-out infinite reverse;
+
+    pointer-events: none;
+}
+
+
+/* =====================================================
+   CONTACT SECTION
+===================================================== */
+
+.contact-section {
+
+    position: relative;
+
+    z-index: 2;
+
+    max-width: 1200px;
+
+    margin: auto;
+}
+
+
+/* =====================================================
+   SECTION HEADING
+===================================================== */
+
+.section-heading {
+
+    text-align: center;
+
+    margin-bottom: 55px;
+
+    animation:
+        headingReveal 0.9s ease both;
+}
+
+
+.section-heading .section-label {
+
+    display: inline-block;
+
+    padding: 8px 17px;
+
+    border-radius: 30px;
+
+    background: #dbeafe;
+
+    color: #2563eb;
+
+    font-size: 12px;
+
+    font-weight: 800;
+
+    letter-spacing: 2px;
+
+    box-shadow:
+        0 6px 20px
+        rgba(96,165,250,0.15);
+}
+
+
+.section-heading h2 {
+
+    margin-top: 15px;
+
+    margin-bottom: 12px;
+
+    color: #334155;
+
+    font-size:
+        clamp(30px, 4vw, 44px);
+
+    font-weight: 900;
+
+    letter-spacing: -1px;
+}
+
+
+.section-heading p {
+
+    color: #64748b;
+
+    font-size: 15px;
+
+    line-height: 1.7;
+}
+
+
+/* =====================================================
+   CONTACT GRID
+===================================================== */
+
+.contact-grid {
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(3, 1fr);
+
+    gap: 28px;
+
+    margin-bottom: 45px;
+}
+
+
+/* =====================================================
+   CONTACT CARD
+===================================================== */
+
+.contact-card {
+
+    position: relative;
+
+    min-height: 260px;
+
+    padding:
+        38px 28px;
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+
+    justify-content: center;
+
+    text-align: center;
+
+    border-radius: 28px;
+
+    border:
+        1px solid
+        rgba(255,255,255,0.90);
+
+    box-shadow:
+
+        0 15px 40px
+        rgba(71,85,105,0.10);
+
+    overflow: hidden;
+
+    transition:
+
+        transform 0.45s
+        cubic-bezier(.2,.8,.2,1),
+
+        box-shadow 0.45s ease;
+
+    animation:
+        contactCardReveal
+        0.8s ease both;
+}
+
+
+/* PASTEL CARD COLORS */
+
+.contact-card:nth-child(1) {
+
+    background: #e0f2fe;
+
+    animation-delay:
+        0.15s;
+}
+
+
+.contact-card:nth-child(2) {
+
+    background: #f3e8ff;
+
+    animation-delay:
+        0.30s;
+}
+
+
+.contact-card:nth-child(3) {
+
+    background: #dcfce7;
+
+    animation-delay:
+        0.45s;
+}
+
+
+/* SHINE EFFECT */
+
+.contact-card::before {
+
+    content: "";
+
+    position: absolute;
+
+    top: 0;
+
+    left: -120%;
+
+    width: 70%;
+
+    height: 100%;
+
+    background:
+
+        linear-gradient(
+            90deg,
+            transparent,
+            rgba(255,255,255,0.55),
+            transparent
+        );
+
+    transform:
+        skewX(-20deg);
+
+    transition:
+        left 0.8s ease;
+
+    pointer-events: none;
+}
+
+
+.contact-card:hover::before {
+
+    left: 150%;
+}
+
+
+/* CARD HOVER */
+
+.contact-card:hover {
+
+    transform:
+        translateY(-13px)
+        scale(1.025);
+
+    box-shadow:
+
+        0 28px 60px
+        rgba(71,85,105,0.17);
+}
+
+
+/* =====================================================
+   CONTACT ICON
+===================================================== */
+
+.contact-icon {
+
+    width: 80px;
+
+    height: 80px;
+
+    margin-bottom: 22px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    border-radius: 23px;
+
+    background:
+        rgba(255,255,255,0.65);
+
+    font-size: 30px;
+
+    box-shadow:
+
+        0 10px 25px
+        rgba(71,85,105,0.09);
+
+    animation:
+        contactIconFloat
+        4s ease-in-out infinite;
+
+    transition:
+
+        transform 0.4s ease,
+
+        box-shadow 0.4s ease;
+}
+
+
+/* ICON COLORS */
+
+.contact-card:nth-child(1)
+.contact-icon {
+
+    color: #0369a1;
+}
+
+
+.contact-card:nth-child(2)
+.contact-icon {
+
+    color: #7e22ce;
+}
+
+
+.contact-card:nth-child(3)
+.contact-icon {
+
+    color: #15803d;
+}
+
+
+/* ICON HOVER */
+
+.contact-card:hover .contact-icon {
+
+    transform:
+        translateY(-7px)
+        rotate(-7deg)
+        scale(1.12);
+
+    box-shadow:
+
+        0 15px 30px
+        rgba(71,85,105,0.15);
+}
+
+
+/* =====================================================
+   CONTACT CARD TEXT
+===================================================== */
+
+.contact-card h3 {
+
+    position: relative;
+
+    z-index: 2;
+
+    margin-bottom: 10px;
+
+    color: #334155;
+
+    font-size: 21px;
+
+    font-weight: 800;
+}
+
+
+.contact-card p {
+
+    position: relative;
+
+    z-index: 2;
+
+    max-width: 260px;
+
+    color: #64748b;
+
+    font-size: 14px;
+
+    line-height: 1.7;
+}
+
+
+/* =====================================================
+   CONTACT NOTE
+===================================================== */
+
+.contact-note {
+
+    position: relative;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 25px;
+
+    padding:
+        30px 35px;
+
+    border-radius: 25px;
+
+    background:
+
+        linear-gradient(
+            135deg,
+            #fff7ed,
+            #ffedd5
+        );
+
+    border:
+        1px solid
+        rgba(255,255,255,0.90);
+
+    box-shadow:
+
+        0 15px 40px
+        rgba(194,65,12,0.10);
+
+    overflow: hidden;
+
+    animation:
+        noteReveal
+        1s ease both;
+
+    transition:
+
+        transform 0.4s ease,
+
+        box-shadow 0.4s ease;
+}
+
+
+/* NOTE HOVER */
+
+.contact-note:hover {
+
+    transform:
+        translateY(-7px);
+
+    box-shadow:
+
+        0 25px 55px
+        rgba(194,65,12,0.15);
+}
+
+
+/* NOTE ICON */
+
+.contact-note > i {
+
+    width: 65px;
+
+    height: 65px;
+
+    flex-shrink: 0;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    border-radius: 20px;
+
+    background:
+        rgba(255,255,255,0.65);
+
+    color: #c2410c;
+
+    font-size: 27px;
+
+    animation:
+        warningPulse 2.5s
+        ease-in-out infinite;
+}
+
+
+/* NOTE TITLE */
+
+.contact-note h3 {
+
+    margin-bottom: 7px;
+
+    color: #9a3412;
+
+    font-size: 19px;
+
+    font-weight: 800;
+}
+
+
+/* NOTE TEXT */
+
+.contact-note p {
+
+    color: #7c2d12;
+
+    font-size: 14px;
+
+    line-height: 1.7;
+}
+
+
+/* =====================================================
+   ANIMATIONS
+===================================================== */
+
+@keyframes heroContent {
+
+    from {
+
+        opacity: 0;
+
+        transform:
+            translateY(35px);
+    }
+
+    to {
+
+        opacity: 1;
+
+        transform:
+            translateY(0);
+    }
+}
+
+
+@keyframes titleReveal {
+
+    from {
+
+        opacity: 0;
+
+        transform:
+            translateY(25px)
+            scale(0.95);
+    }
+
+    to {
+
+        opacity: 1;
+
+        transform:
+            translateY(0)
+            scale(1);
+    }
+}
+
+
+@keyframes paragraphReveal {
+
+    from {
+
+        opacity: 0;
+
+        transform:
+            translateY(20px);
+    }
+
+    to {
+
+        opacity: 1;
+
+        transform:
+            translateY(0);
+    }
+}
+
+
+@keyframes labelPulse {
+
+    0%,
+    100% {
+
+        transform:
+            scale(1);
+    }
+
+    50% {
+
+        transform:
+            scale(1.04);
+    }
+}
+
+
+@keyframes headingReveal {
+
+    from {
+
+        opacity: 0;
+
+        transform:
+            translateY(30px);
+    }
+
+    to {
+
+        opacity: 1;
+
+        transform:
+            translateY(0);
+    }
+}
+
+
+@keyframes contactCardReveal {
+
+    from {
+
+        opacity: 0;
+
+        transform:
+            translateY(45px)
+            scale(0.94);
+    }
+
+    to {
+
+        opacity: 1;
+
+        transform:
+            translateY(0)
+            scale(1);
+    }
+}
+
+
+@keyframes contactIconFloat {
+
+    0%,
+    100% {
+
+        transform:
+            translateY(0);
+    }
+
+    50% {
+
+        transform:
+            translateY(-8px);
+    }
+}
+
+
+@keyframes noteReveal {
+
+    from {
+
+        opacity: 0;
+
+        transform:
+            translateY(40px)
+            scale(0.97);
+    }
+
+    to {
+
+        opacity: 1;
+
+        transform:
+            translateY(0)
+            scale(1);
+    }
+}
+
+
+@keyframes warningPulse {
+
+    0%,
+    100% {
+
+        transform:
+            scale(1);
+
+        box-shadow:
+            0 0 0
+            rgba(194,65,12,0);
+    }
+
+    50% {
+
+        transform:
+            scale(1.08);
+
+        box-shadow:
+            0 0 0 10px
+            rgba(194,65,12,0.08);
+    }
+}
+
+
+/* HERO BUBBLE 1 */
+
+@keyframes heroBubbleOne {
+
+    0%,
+    100% {
+
+        transform:
+            translate(0,0)
+            scale(1);
+    }
+
+    50% {
+
+        transform:
+            translate(40px,25px)
+            scale(1.12);
+    }
+}
+
+
+/* HERO BUBBLE 2 */
+
+@keyframes heroBubbleTwo {
+
+    0%,
+    100% {
+
+        transform:
+            translate(0,0)
+            scale(1);
+    }
+
+    50% {
+
+        transform:
+            translate(-35px,-30px)
+            scale(1.10);
+    }
+}
+
+
+/* MAIN BUBBLE 1 */
+
+@keyframes floatingBubbleOne {
+
+    0%,
+    100% {
+
+        transform:
+            translate(0,0)
+            scale(1);
+    }
+
+    50% {
+
+        transform:
+            translate(50px,-30px)
+            scale(1.12);
+    }
+}
+
+
+/* MAIN BUBBLE 2 */
+
+@keyframes floatingBubbleTwo {
+
+    0%,
+    100% {
+
+        transform:
+            translate(0,0)
+            scale(1);
+    }
+
+    50% {
+
+        transform:
+            translate(-40px,-25px)
+            scale(1.10);
+    }
+}
+
+
+/* =====================================================
+   RESPONSIVE
+===================================================== */
+
+@media (max-width: 900px) {
+
+    .contact-grid {
+
+        grid-template-columns:
+            repeat(2, 1fr);
+    }
+
+}
+
+
+@media (max-width: 650px) {
+
+    .inner-page-hero {
+
+        min-height: 400px;
+
+        padding:
+            70px 20px;
+    }
+
+
+    .inner-page-content h1 {
+
+        font-size: 42px;
+
+        letter-spacing: -1px;
+    }
+
+
+    .inner-page-content p {
+
+        font-size: 15px;
+    }
+
+
+    .page-content {
+
+        padding:
+            60px 20px 80px;
+    }
+
+
+    .contact-grid {
+
+        grid-template-columns: 1fr;
+
+        gap: 20px;
+    }
+
+
+    .contact-card {
+
+        min-height: 240px;
+    }
+
+
+    .section-heading {
+
+        margin-bottom: 40px;
+    }
+
+
+    .section-heading h2 {
+
+        font-size: 30px;
+    }
+
+
+    .contact-note {
+
+        flex-direction: column;
+
+        text-align: center;
+
+        padding:
+            30px 22px;
+    }
+
+
+    .contact-note > i {
+
+        margin-bottom: 5px;
+    }
+
+}
+
+
+/* =====================================================
+   ACCESSIBILITY
+===================================================== */
+
+@media (prefers-reduced-motion: reduce) {
+
+    *,
+    *::before,
+    *::after {
+
+        animation-duration:
+            0.01ms !important;
+
+        animation-iteration-count:
+            1 !important;
+
+        scroll-behavior:
+            auto !important;
+
+        transition-duration:
+            0.01ms !important;
+    }
+
+}
+
+</style>
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+
+    <header class="main-header">
+
+        <div class="navbar">
+
+            <a href="../home.html" class="brand">
+
+                <div class="brand-logo">
+
+                    <img
+                        src="../picture/images.jpg"
+                        alt="LGU Dapa Logo"
+                        onerror="this.style.display='none'; document.getElementById('fallbackLogo').style.display='flex';">
+
+                    <div id="fallbackLogo" class="fallback-logo">
+
+                        <i class="fa-solid fa-building-columns"></i>
+
+                    </div>
+
+                </div>
+
+                <div class="brand-text">
+
+                    <h2>LGU DAPA</h2>
+
+                    <p>
+                        Facilities & Equipment Reservation
+                    </p>
+
+                </div>
+
+            </a>
+
+
+            <nav class="navigation">
+
+           <a href="../home.html" class="nav-link">
+                         Home
+          </a>
+
+           <a href="how-to-reserve.html" class="nav-link">
+                      How to Reserve
+          </a>
+
+            <a href="about.html" class="nav-link">
+                      About Us
+           </a>
+
+           <a href="contact.html" class="nav-link active">
+                      Contact
+        </a>
+
+        </nav>
+
+
+            <div class="nav-buttons">
+
+                <button
+                    type="button"
+                    class="btn btn-outline login"
+                    onclick="showLogin()">
+
+                    <i class="fa-solid fa-right-to-bracket"></i>
+                    <span>Login</span>
+
+                </button>
+
+
+                <button
+                    type="button"
+                    class="btn btn-primary register"
+                    onclick="showRegister()">
+
+                    <i class="fa-solid fa-user-plus"></i>
+                    <span>Register</span>
+
+                </button>
+
+            </div>
+
+
+            <button
+                type="button"
+                class="mobile-menu-button"
+                onclick="toggleMobileMenu()">
+
+                <i class="fa-solid fa-bars"></i>
+
+            </button>
+
+        </div>
+
+    </header>
+
+
+    <!-- PAGE HERO -->
+
+    <section class="inner-page-hero">
+
+        <div class="inner-page-content">
+
+            <span class="section-label">
+                GET IN TOUCH
+            </span>
+
+            <h1>
+                Contact Us
+            </h1>
+
+            <p>
+                Need assistance with your reservation?
+                Get in touch with LGU Dapa.
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <!-- CONTACT -->
+
+    <main class="page-content">
+
+        <section class="contact-section">
+
+            <div class="section-heading">
+
+                <span class="section-label">
+                    LGU DAPA
+                </span>
+
+                <h2>
+                    How Can We Help?
+                </h2>
+
+                <p>
+                    Please visit the LGU Dapa office for assistance.
+                </p>
+
+            </div>
+
+
+            <div class="contact-grid">
+
+
+                <article class="contact-card">
+
+                    <div class="contact-icon">
+
+                        <i class="fa-solid fa-building-columns"></i>
+
+                    </div>
+
+                    <h3>
+                        LGU Dapa
+                    </h3>
+
+                    <p>
+                        Local Government Unit of Dapa
+                    </p>
+
+                </article>
+
+
+                <article class="contact-card">
+
+                    <div class="contact-icon">
+
+                        <i class="fa-solid fa-location-dot"></i>
+
+                    </div>
+
+                    <h3>
+                        Location
+                    </h3>
+
+                    <p>
+                        Dapa, Surigao del Norte
+                    </p>
+
+                </article>
+
+
+                <article class="contact-card">
+
+                    <div class="contact-icon">
+
+                        <i class="fa-solid fa-circle-info"></i>
+
+                    </div>
+
+                    <h3>
+                        Assistance
+                    </h3>
+
+                    <p>
+                        Please visit the LGU Dapa office for
+                        assistance with reservations.
+                    </p>
+
+                </article>
+
+            </div>
+
+
+            <div class="contact-note">
+
+                <i class="fa-solid fa-circle-exclamation"></i>
+
+                <div>
+
+                    <h3>
+                        Need Help With a Reservation?
+                    </h3>
+
+                    <p>
+                        Make sure you have your reservation details
+                        ready when requesting assistance.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- POPUP -->
+
+    <div id="popup"
+        class="popup-overlay"
+        aria-hidden="true">
+
+        <div class="popup-box"
+            role="dialog"
+            aria-modal="true">
+
+            <button
+                type="button"
+                class="popup-close"
+                onclick="closePopup()">
+
+                <i class="fa-solid fa-xmark"></i>
+
+            </button>
+
+            <div id="popupContent"></div>
+
+        </div>
+
+    </div>
+
+
+    <div id="here" hidden></div>
+
+    <script src="../script.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,1414 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0">
+
+    <meta name="description"
+        content="About LGU Dapa Facilities and Equipment Reservation System">
+
+    <title>
+        LGU Dapa | About Us
+    </title>
+
+    <link rel="stylesheet" href="../style.css">
+
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+        <style>
+
+/* =====================================================
+   LGU DAPA RESERVATION SYSTEM
+   ABOUT US - PASTEL MODERN UI/UX
+   COOL ANIMATIONS
+===================================================== */
+
+
+/* =====================================================
+   PAGE HERO
+===================================================== */
+
+.inner-page-hero {
+
+    position: relative;
+
+    min-height: 440px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    padding: 90px 7%;
+
+    overflow: hidden;
+
+    color: #334155;
+
+     background:
+        radial-gradient(
+            circle at 8% 20%,
+            rgba(16, 135, 199, 0.9),
+            transparent 30%
+        ),
+
+        radial-gradient(
+            circle at 92% 20%,
+            rgba(233, 213, 255, 0.90),
+            transparent 30%
+        ),
+
+        radial-gradient(
+            circle at 75% 100%,
+            rgba(251, 207, 232, 0.80),
+            transparent 32%
+        ),
+
+        radial-gradient(
+            circle at 25% 100%,
+            rgba(187, 247, 208, 0.80),
+            transparent 32%
+        ),
+
+        linear-gradient(
+            135deg,
+            #f0f9ff,
+            #faf5ff,
+            #fdf2f8
+        );
+}
+
+
+/* FLOATING HERO BUBBLE */
+
+.inner-page-hero::before {
+
+    content: "";
+
+    position: absolute;
+
+    width: 400px;
+    height: 400px;
+
+    left: -160px;
+    top: -180px;
+
+    border-radius: 50%;
+
+    background:
+
+        radial-gradient(
+            circle,
+            rgba(21, 124, 179, 0.7),
+            transparent 70%
+        );
+
+    animation:
+        heroBubbleOne 8s ease-in-out infinite;
+
+    pointer-events: none;
+}
+
+
+/* SECOND HERO BUBBLE */
+
+.inner-page-hero::after {
+
+    content: "";
+
+    position: absolute;
+
+    width: 450px;
+    height: 450px;
+
+    right: -190px;
+    bottom: -230px;
+
+    border-radius: 50%;
+
+    background:
+
+        radial-gradient(
+            circle,
+            rgba(233, 213, 255, 0.70),
+            rgba(251, 207, 232, 0.25),
+            transparent 70%
+        );
+
+    animation:
+        heroBubbleTwo 10s ease-in-out infinite;
+
+    pointer-events: none;
+}
+
+
+/* HERO CONTENT */
+
+.inner-page-content {
+
+    position: relative;
+
+    z-index: 5;
+
+    width: 100%;
+
+    max-width: 850px;
+
+    text-align: center;
+
+    animation:
+        heroContent 1s ease both;
+}
+
+
+/* HERO LABEL */
+
+.inner-page-content .section-label {
+
+    display: inline-block;
+
+    padding: 9px 18px;
+
+    margin-bottom: 20px;
+
+    border-radius: 50px;
+
+    background: rgba(255,255,255,0.65);
+
+    border:
+        1px solid rgba(255,255,255,0.9);
+
+    color: #64748b;
+
+    backdrop-filter: blur(12px);
+
+    box-shadow:
+        0 8px 25px rgba(100,116,139,0.10);
+
+    font-size: 12px;
+
+    font-weight: 800;
+
+    letter-spacing: 2px;
+
+    animation:
+        labelPulse 3s ease-in-out infinite;
+}
+
+
+/* HERO TITLE */
+
+.inner-page-content h1 {
+
+    margin: 0 0 18px;
+
+    color: #334155;
+
+    font-size:
+        clamp(44px, 6vw, 68px);
+
+    font-weight: 900;
+
+    letter-spacing: -2px;
+
+    line-height: 1.05;
+
+    animation:
+        titleReveal 1s ease both;
+
+    text-shadow:
+        0 8px 30px rgba(100,116,139,0.10);
+}
+
+
+/* HERO DESCRIPTION */
+
+.inner-page-content p {
+
+    max-width: 650px;
+
+    margin: auto;
+
+    color: #64748b;
+
+    font-size: 18px;
+
+    line-height: 1.8;
+
+    animation:
+        paragraphReveal 1.2s ease both;
+}
+
+
+/* =====================================================
+   MAIN ABOUT SECTION
+===================================================== */
+
+.page-content {
+
+    position: relative;
+
+    overflow: hidden;
+
+    padding:
+        90px 7%
+        110px;
+
+    background:
+
+        radial-gradient(
+            circle at 0% 20%,
+            rgba(186,230,253,0.65),
+            transparent 28%
+        ),
+
+        radial-gradient(
+            circle at 100% 20%,
+            rgba(233,213,255,0.65),
+            transparent 28%
+        ),
+
+        radial-gradient(
+            circle at 15% 90%,
+            rgba(187,247,208,0.60),
+            transparent 28%
+        ),
+
+        radial-gradient(
+            circle at 85% 90%,
+            rgba(251,207,232,0.60),
+            transparent 28%
+        ),
+
+        #fafbff;
+}
+
+
+/* MOVING BACKGROUND BUBBLE */
+
+.page-content::before {
+
+    content: "";
+
+    position: absolute;
+
+    width: 320px;
+    height: 320px;
+
+    left: -150px;
+    top: 80px;
+
+    border-radius: 50%;
+
+    background:
+
+        radial-gradient(
+            circle,
+            rgba(186,230,253,0.60),
+            transparent 70%
+        );
+
+    animation:
+        floatingBubbleOne 9s ease-in-out infinite;
+
+    pointer-events: none;
+}
+
+
+/* SECOND MOVING BUBBLE */
+
+.page-content::after {
+
+    content: "";
+
+    position: absolute;
+
+    width: 350px;
+    height: 350px;
+
+    right: -160px;
+    bottom: 50px;
+
+    border-radius: 50%;
+
+    background:
+
+        radial-gradient(
+            circle,
+            rgba(233,213,255,0.60),
+            rgba(251,207,232,0.20),
+            transparent 70%
+        );
+
+    animation:
+        floatingBubbleTwo 11s ease-in-out infinite;
+
+    pointer-events: none;
+}
+
+
+/* =====================================================
+   ABOUT SECTION
+===================================================== */
+
+.about-section {
+
+    position: relative;
+
+    z-index: 2;
+
+    max-width: 1200px;
+
+    margin: auto;
+}
+
+
+/* =====================================================
+   ABOUT CARD
+===================================================== */
+
+.about-card {
+
+    position: relative;
+
+    display: grid;
+
+    grid-template-columns:
+        280px 1fr;
+
+    gap: 55px;
+
+    align-items: center;
+
+    padding: 60px;
+
+    border-radius: 35px;
+
+    background:
+        rgba(255,255,255,0.72);
+
+    border:
+        1px solid rgba(255,255,255,0.90);
+
+    backdrop-filter:
+        blur(18px);
+
+    box-shadow:
+
+        0 25px 70px
+        rgba(71,85,105,0.12);
+
+    overflow: hidden;
+
+    animation:
+        aboutCardReveal 1s ease both;
+
+    transition:
+        transform 0.5s ease,
+        box-shadow 0.5s ease;
+}
+
+
+/* CARD HOVER */
+
+.about-card:hover {
+
+    transform:
+        translateY(-10px);
+
+    box-shadow:
+
+        0 35px 90px
+        rgba(71,85,105,0.18);
+}
+
+
+/* SHINE EFFECT */
+
+.about-card::before {
+
+    content: "";
+
+    position: absolute;
+
+    top: 0;
+
+    left: -120%;
+
+    width: 70%;
+
+    height: 100%;
+
+    background:
+
+        linear-gradient(
+            90deg,
+            transparent,
+            rgba(255,255,255,0.60),
+            transparent
+        );
+
+    transform:
+        skewX(-20deg);
+
+    transition:
+        left 0.9s ease;
+
+    pointer-events: none;
+}
+
+
+.about-card:hover::before {
+
+    left: 150%;
+}
+
+
+/* =====================================================
+   ABOUT ICON
+===================================================== */
+
+.about-icon {
+
+    width: 210px;
+
+    height: 210px;
+
+    margin: auto;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    border-radius: 55px;
+
+    background:
+
+        linear-gradient(
+            135deg,
+            #e0f2fe,
+            #dbeafe
+        );
+
+    color: #0369a1;
+
+    font-size: 75px;
+
+    box-shadow:
+
+        0 20px 45px
+        rgba(56,189,248,0.18);
+
+    animation:
+        aboutIconFloat 4s ease-in-out infinite;
+
+    transition:
+        transform 0.5s ease,
+        box-shadow 0.5s ease;
+}
+
+
+/* ICON HOVER */
+
+.about-card:hover .about-icon {
+
+    transform:
+        rotate(-5deg)
+        scale(1.08);
+
+    box-shadow:
+
+        0 25px 55px
+        rgba(56,189,248,0.28);
+}
+
+
+/* =====================================================
+   ABOUT CONTENT
+===================================================== */
+
+.about-content {
+
+    position: relative;
+
+    z-index: 2;
+}
+
+
+/* ABOUT LABEL */
+
+.about-content .section-label {
+
+    display: inline-block;
+
+    padding: 8px 17px;
+
+    margin-bottom: 15px;
+
+    border-radius: 30px;
+
+    background: #dbeafe;
+
+    color: #2563eb;
+
+    font-size: 12px;
+
+    font-weight: 800;
+
+    letter-spacing: 2px;
+
+    box-shadow:
+        0 6px 20px
+        rgba(96,165,250,0.15);
+}
+
+
+/* ABOUT TITLE */
+
+.about-content h2 {
+
+    margin-bottom: 20px;
+
+    color: #334155;
+
+    font-size:
+        clamp(28px, 4vw, 42px);
+
+    font-weight: 900;
+
+    line-height: 1.2;
+
+    letter-spacing: -1px;
+}
+
+
+/* ABOUT PARAGRAPHS */
+
+.about-content p {
+
+    margin-bottom: 16px;
+
+    color: #64748b;
+
+    font-size: 15px;
+
+    line-height: 1.8;
+}
+
+
+/* =====================================================
+   HIGHLIGHTS
+===================================================== */
+
+.about-highlights {
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(3, 1fr);
+
+    gap: 18px;
+
+    margin-top: 35px;
+}
+
+
+/* HIGHLIGHT CARD */
+
+.about-highlights > div {
+
+    position: relative;
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+
+    text-align: center;
+
+    padding: 22px 15px;
+
+    border-radius: 20px;
+
+    background: #f8fafc;
+
+    border:
+        1px solid #f1f5f9;
+
+    transition:
+        transform 0.4s ease,
+        box-shadow 0.4s ease;
+
+    animation:
+        highlightAppear 0.8s ease both;
+}
+
+
+/* DIFFERENT PASTEL COLORS */
+
+.about-highlights > div:nth-child(1) {
+
+    background: #e0f2fe;
+
+    animation-delay: .2s;
+}
+
+
+.about-highlights > div:nth-child(2) {
+
+    background: #f3e8ff;
+
+    animation-delay: .4s;
+}
+
+
+.about-highlights > div:nth-child(3) {
+
+    background: #dcfce7;
+
+    animation-delay: .6s;
+}
+
+
+/* HIGHLIGHT HOVER */
+
+.about-highlights > div:hover {
+
+    transform:
+        translateY(-8px)
+        scale(1.03);
+
+    box-shadow:
+        0 15px 30px
+        rgba(71,85,105,0.12);
+}
+
+
+/* HIGHLIGHT ICON */
+
+.about-highlights i {
+
+    width: 50px;
+
+    height: 50px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    margin-bottom: 12px;
+
+    border-radius: 15px;
+
+    font-size: 20px;
+
+    background:
+        rgba(255, 255, 255, 0.65);
+
+    animation:
+        miniIconFloat 3s ease-in-out infinite;
+}
+
+
+.about-highlights > div:nth-child(1) i {
+
+    color: #0369a1;
+}
+
+
+.about-highlights > div:nth-child(2) i {
+
+    color: #7e22ce;
+}
+
+
+.about-highlights > div:nth-child(3) i {
+
+    color: #15803d;
+}
+
+
+/* HIGHLIGHT TITLE */
+
+.about-highlights strong {
+
+    margin-bottom: 5px;
+
+    color: #334155;
+
+    font-size: 14px;
+
+    font-weight: 800;
+}
+
+
+/* HIGHLIGHT DESCRIPTION */
+
+.about-highlights span {
+
+    color: #64748b;
+
+    font-size: 12px;
+
+    line-height: 1.5;
+}
+
+
+/* =====================================================
+   ANIMATIONS
+===================================================== */
+
+
+/* HERO CONTENT */
+
+@keyframes heroContent {
+
+    from {
+
+        opacity: 0;
+
+        transform:
+            translateY(35px);
+    }
+
+    to {
+
+        opacity: 1;
+
+        transform:
+            translateY(0);
+    }
+}
+
+
+/* TITLE */
+
+@keyframes titleReveal {
+
+    from {
+
+        opacity: 0;
+
+        transform:
+            translateY(25px)
+            scale(0.95);
+    }
+
+    to {
+
+        opacity: 1;
+
+        transform:
+            translateY(0)
+            scale(1);
+    }
+}
+
+
+/* PARAGRAPH */
+
+@keyframes paragraphReveal {
+
+    from {
+
+        opacity: 0;
+
+        transform:
+            translateY(20px);
+    }
+
+    to {
+
+        opacity: 1;
+
+        transform:
+            translateY(0);
+    }
+}
+
+
+/* LABEL */
+
+@keyframes labelPulse {
+
+    0%,
+    100% {
+
+        transform:
+            scale(1);
+    }
+
+    50% {
+
+        transform:
+            scale(1.04);
+    }
+}
+
+
+/* ABOUT CARD */
+
+@keyframes aboutCardReveal {
+
+    from {
+
+        opacity: 0;
+
+        transform:
+            translateY(50px)
+            scale(0.96);
+    }
+
+    to {
+
+        opacity: 1;
+
+        transform:
+            translateY(0)
+            scale(1);
+    }
+}
+
+
+/* ABOUT ICON */
+
+@keyframes aboutIconFloat {
+
+    0%,
+    100% {
+
+        transform:
+            translateY(0)
+            rotate(0deg);
+    }
+
+    50% {
+
+        transform:
+            translateY(-12px)
+            rotate(3deg);
+    }
+}
+
+
+/* HIGHLIGHTS */
+
+@keyframes highlightAppear {
+
+    from {
+
+        opacity: 0;
+
+        transform:
+            translateY(30px);
+    }
+
+    to {
+
+        opacity: 1;
+
+        transform:
+            translateY(0);
+    }
+}
+
+
+/* MINI ICON */
+
+@keyframes miniIconFloat {
+
+    0%,
+    100% {
+
+        transform:
+            translateY(0);
+    }
+
+    50% {
+
+        transform:
+            translateY(-5px);
+    }
+}
+
+
+/* HERO BUBBLE 1 */
+
+@keyframes heroBubbleOne {
+
+    0%,
+    100% {
+
+        transform:
+            translate(0,0)
+            scale(1);
+    }
+
+    50% {
+
+        transform:
+            translate(40px,25px)
+            scale(1.12);
+    }
+}
+
+
+/* HERO BUBBLE 2 */
+
+@keyframes heroBubbleTwo {
+
+    0%,
+    100% {
+
+        transform:
+            translate(0,0)
+            scale(1);
+    }
+
+    50% {
+
+        transform:
+            translate(-35px,-30px)
+            scale(1.10);
+    }
+}
+
+
+/* MAIN BUBBLE 1 */
+
+@keyframes floatingBubbleOne {
+
+    0%,
+    100% {
+
+        transform:
+            translate(0,0)
+            scale(1);
+    }
+
+    50% {
+
+        transform:
+            translate(50px,-30px)
+            scale(1.12);
+    }
+}
+
+
+/* MAIN BUBBLE 2 */
+
+@keyframes floatingBubbleTwo {
+
+    0%,
+    100% {
+
+        transform:
+            translate(0,0)
+            scale(1);
+    }
+
+    50% {
+
+        transform:
+            translate(-40px,-25px)
+            scale(1.10);
+    }
+}
+
+
+/* =====================================================
+   RESPONSIVE
+===================================================== */
+
+@media (max-width: 900px) {
+
+    .about-card {
+
+        grid-template-columns: 1fr;
+
+        text-align: center;
+
+        gap: 35px;
+
+        padding: 45px 35px;
+    }
+
+    .about-icon {
+
+        width: 170px;
+
+        height: 170px;
+
+        font-size: 60px;
+    }
+
+    .about-highlights {
+
+        grid-template-columns:
+            repeat(3, 1fr);
+    }
+
+}
+
+
+@media (max-width: 650px) {
+
+    .inner-page-hero {
+
+        min-height: 400px;
+
+        padding:
+            70px 20px;
+    }
+
+
+    .inner-page-content h1 {
+
+        font-size: 42px;
+
+        letter-spacing: -1px;
+    }
+
+
+    .inner-page-content p {
+
+        font-size: 15px;
+    }
+
+
+    .page-content {
+
+        padding:
+            60px 20px 80px;
+    }
+
+
+    .about-card {
+
+        padding:
+            35px 22px;
+
+        border-radius: 25px;
+    }
+
+
+    .about-icon {
+
+        width: 145px;
+
+        height: 145px;
+
+        border-radius: 40px;
+
+        font-size: 50px;
+    }
+
+
+    .about-content h2 {
+
+        font-size: 29px;
+    }
+
+
+    .about-highlights {
+
+        grid-template-columns: 1fr;
+
+        gap: 15px;
+    }
+
+
+    .about-highlights > div {
+
+        padding: 20px;
+    }
+
+}
+
+
+/* =====================================================
+   ACCESSIBILITY
+===================================================== */
+
+@media (prefers-reduced-motion: reduce) {
+
+    *,
+    *::before,
+    *::after {
+
+        animation-duration: 0.01ms !important;
+
+        animation-iteration-count: 1 !important;
+
+        scroll-behavior: auto !important;
+
+        transition-duration: 0.01ms !important;
+    }
+
+}
+
+</style>
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+
+    <header class="main-header">
+
+        <div class="navbar">
+
+            <a href="../home.html" class="brand">
+
+                <div class="brand-logo">
+
+                    <img
+                        src="../picture/images.jpg"
+                        alt="LGU Dapa Logo"
+                        onerror="this.style.display='none'; document.getElementById('fallbackLogo').style.display='flex';">
+
+                    <div id="fallbackLogo" class="fallback-logo">
+
+                        <i class="fa-solid fa-building-columns"></i>
+
+                    </div>
+
+                </div>
+
+                <div class="brand-text">
+
+                    <h2>LGU DAPA</h2>
+
+                    <p>
+                        Facilities & Equipment Reservation
+                    </p>
+
+                </div>
+
+            </a>
+
+
+            <nav class="navigation">
+
+                <a href="../home.html" class="nav-link">
+                         Home
+                </a>
+
+                <a href="how-to-reserve.html" class="nav-link">
+                       How to Reserve
+                </a>
+
+                <a href="about.html" class="nav-link active">
+                       About Us
+                </a>
+
+                <a href="contact.html" class="nav-link">
+                     Contact
+                </a>
+
+            </nav>
+
+
+            <div class="nav-buttons">
+
+                <button
+                    type="button"
+                    class="btn btn-outline login"
+                    onclick="showLogin()">
+
+                    <i class="fa-solid fa-right-to-bracket"></i>
+                    <span>Login</span>
+
+                </button>
+
+
+                <button
+                    type="button"
+                    class="btn btn-primary register"
+                    onclick="showRegister()">
+
+                    <i class="fa-solid fa-user-plus"></i>
+                    <span>Register</span>
+
+                </button>
+
+            </div>
+
+
+            <button
+                type="button"
+                class="mobile-menu-button"
+                onclick="toggleMobileMenu()">
+
+                <i class="fa-solid fa-bars"></i>
+
+            </button>
+
+        </div>
+
+    </header>
+
+
+    <!-- PAGE HERO -->
+
+    <section class="inner-page-hero">
+
+        <div class="inner-page-content">
+
+            <span class="section-label">
+                ABOUT THE SYSTEM
+            </span>
+
+            <h1>
+                About Us
+            </h1>
+
+            <p>
+                Learn more about the LGU Dapa Facilities and
+                Equipment Reservation System.
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <!-- ABOUT CONTENT -->
+
+    <main class="page-content">
+
+        <section class="about-section">
+
+            <div class="about-card">
+
+                <div class="about-icon">
+
+                    <i class="fa-solid fa-building-columns"></i>
+
+                </div>
+
+
+                <div class="about-content">
+
+                    <span class="section-label">
+                        LGU DAPA
+                    </span>
+
+                    <h2>
+                        Facilities & Equipment Reservation System
+                    </h2>
+
+                    <p>
+                        The LGU Dapa Facilities and Equipment
+                        Reservation System provides residents with
+                        an easier way to reserve municipal facilities
+                        and equipment.
+                    </p>
+
+                    <p>
+                        The system is designed to provide residents
+                        with a convenient online portal while helping
+                        LGU personnel organize reservation requests.
+                    </p>
+
+                    <div class="about-highlights">
+
+                        <div>
+
+                            <i class="fa-solid fa-calendar-check"></i>
+
+                            <strong>
+                                Easy Reservations
+                            </strong>
+
+                            <span>
+                                Simple reservation process
+                            </span>
+
+                        </div>
+
+
+                        <div>
+
+                            <i class="fa-solid fa-users"></i>
+
+                            <strong>
+                                Resident Friendly
+                            </strong>
+
+                            <span>
+                                Easy-to-use online portal
+                            </span>
+
+                        </div>
+
+
+                        <div>
+
+                            <i class="fa-solid fa-chart-column"></i>
+
+                            <strong>
+                                Organized Management
+                            </strong>
+
+                            <span>
+                                Better reservation monitoring
+                            </span>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- POPUP -->
+
+    <div id="popup"
+        class="popup-overlay"
+        aria-hidden="true">
+
+        <div class="popup-box"
+            role="dialog"
+            aria-modal="true">
+
+            <button
+                type="button"
+                class="popup-close"
+                onclick="closePopup()">
+
+                <i class="fa-solid fa-xmark"></i>
+
+            </button>
+
+            <div id="popupContent"></div>
+
+        </div>
+
+    </div>
+
+
+    <div id="here" hidden></div>
+
+    <script src="../script.js"></script>
+
+</body>
+
+</html>
