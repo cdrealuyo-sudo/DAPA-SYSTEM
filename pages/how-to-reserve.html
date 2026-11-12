@@ -1,0 +1,1381 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0">
+
+    <meta name="description"
+        content="How to reserve LGU Dapa facilities and equipment">
+
+    <title>
+        LGU Dapa | How to Reserve
+    </title>
+
+    <link rel="stylesheet" href="../style.css">
+
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+        <style>
+
+/* =====================================================
+   LGU DAPA RESERVATION SYSTEM
+   HOW TO RESERVE - PASTEL UI/UX
+===================================================== */
+
+
+/* =====================================================
+   PAGE HERO
+   Pastel background matching the six cards
+===================================================== */
+
+.inner-page-hero {
+
+    position: relative;
+
+    min-height: 440px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    padding: 90px 7%;
+
+    overflow: hidden;
+
+    color: #334155;
+
+    background:
+        radial-gradient(
+            circle at 8% 20%,
+            rgba(16, 135, 199, 0.9),
+            transparent 30%
+        ),
+
+        radial-gradient(
+            circle at 92% 20%,
+            rgba(233, 213, 255, 0.90),
+            transparent 30%
+        ),
+
+        radial-gradient(
+            circle at 75% 100%,
+            rgba(251, 207, 232, 0.80),
+            transparent 32%
+        ),
+
+        radial-gradient(
+            circle at 25% 100%,
+            rgba(187, 247, 208, 0.80),
+            transparent 32%
+        ),
+
+        linear-gradient(
+            135deg,
+            #f0f9ff,
+            #faf5ff,
+            #fdf2f8
+        );
+}
+
+
+/* Floating pastel circle - left */
+
+.inner-page-hero::before {
+
+    content: "";
+
+    position: absolute;
+
+    width: 380px;
+
+    height: 380px;
+
+    left: -150px;
+
+    top: -170px;
+
+    border-radius: 50%;
+
+    background:
+        radial-gradient(
+            circle,
+            rgba(186, 230, 253, 0.65),
+            transparent 70%
+        );
+
+    animation:
+        heroBubbleOne 8s ease-in-out infinite;
+
+    pointer-events: none;
+}
+
+
+/* Floating pastel circle - right */
+
+.inner-page-hero::after {
+
+    content: "";
+
+    position: absolute;
+
+    width: 420px;
+
+    height: 420px;
+
+    right: -180px;
+
+    bottom: -220px;
+
+    border-radius: 50%;
+
+    background:
+        radial-gradient(
+            circle,
+            rgba(233, 213, 255, 0.65),
+            rgba(251, 207, 232, 0.25),
+            transparent 70%
+        );
+
+    animation:
+        heroBubbleTwo 10s ease-in-out infinite;
+
+    pointer-events: none;
+}
+
+
+/* =====================================================
+   HERO CONTENT
+===================================================== */
+
+.inner-page-content {
+
+    position: relative;
+
+    z-index: 5;
+
+    width: 100%;
+
+    max-width: 850px;
+
+    text-align: center;
+
+    animation:
+        heroContent 0.8s ease both;
+}
+
+
+/* Reservation Guide */
+
+.inner-page-content .section-label {
+
+    display: inline-block;
+
+    padding: 9px 18px;
+
+    margin-bottom: 20px;
+
+    border-radius: 50px;
+
+    background: rgba(255,255,255,0.65);
+
+    border: 1px solid rgba(255,255,255,0.9);
+
+    color: #64748b;
+
+    backdrop-filter: blur(12px);
+
+    box-shadow:
+        0 8px 25px rgba(100,116,139,0.10);
+
+    font-size: 12px;
+
+    font-weight: 800;
+
+    letter-spacing: 2px;
+}
+
+
+/* Hero title */
+
+.inner-page-content h1 {
+
+    margin: 0 0 18px;
+
+    color: #334155;
+
+    font-size: clamp(44px, 6vw, 68px);
+
+    font-weight: 900;
+
+    letter-spacing: -2px;
+
+    line-height: 1.05;
+}
+
+
+/* Hero description */
+
+.inner-page-content p {
+
+    max-width: 650px;
+
+    margin: auto;
+
+    color: #64748b;
+
+    font-size: 18px;
+
+    line-height: 1.8;
+}
+
+
+/* =====================================================
+   MAIN STEPS SECTION
+   Pastel background
+===================================================== */
+
+.page-content {
+
+    position: relative;
+
+    overflow: hidden;
+
+    padding: 90px 7% 110px;
+
+    background:
+
+        radial-gradient(
+            circle at 0% 15%,
+            rgba(186, 230, 253, 0.65),
+            transparent 28%
+        ),
+
+        radial-gradient(
+            circle at 100% 15%,
+            rgba(233, 213, 255, 0.65),
+            transparent 28%
+        ),
+
+        radial-gradient(
+            circle at 15% 90%,
+            rgba(187, 247, 208, 0.60),
+            transparent 28%
+        ),
+
+        radial-gradient(
+            circle at 85% 90%,
+            rgba(251, 207, 232, 0.60),
+            transparent 28%
+        ),
+
+        radial-gradient(
+            circle at 50% 50%,
+            rgba(254, 240, 138, 0.25),
+            transparent 30%
+        ),
+
+        #fafbff;
+}
+
+
+/* =====================================================
+   FLOATING BACKGROUND BUBBLES
+===================================================== */
+
+.page-content::before {
+
+    content: "";
+
+    position: absolute;
+
+    width: 300px;
+
+    height: 300px;
+
+    top: 80px;
+
+    left: -140px;
+
+    border-radius: 50%;
+
+    background:
+        radial-gradient(
+            circle,
+            rgba(186, 230, 253, 0.55),
+            rgba(186, 230, 253, 0.10) 65%,
+            transparent 70%
+        );
+
+    animation:
+        pastelFloatOne 9s ease-in-out infinite;
+
+    pointer-events: none;
+}
+
+
+.page-content::after {
+
+    content: "";
+
+    position: absolute;
+
+    width: 350px;
+
+    height: 350px;
+
+    right: -160px;
+
+    bottom: 40px;
+
+    border-radius: 50%;
+
+    background:
+        radial-gradient(
+            circle,
+            rgba(233, 213, 255, 0.55),
+            rgba(251, 207, 232, 0.15) 65%,
+            transparent 70%
+        );
+
+    animation:
+        pastelFloatTwo 11s ease-in-out infinite reverse;
+
+    pointer-events: none;
+}
+
+
+/* =====================================================
+   SECTION HEADING
+===================================================== */
+
+.guide-section {
+
+    position: relative;
+
+    z-index: 2;
+
+    max-width: 1200px;
+
+    margin: auto;
+}
+
+
+.section-heading {
+
+    position: relative;
+
+    z-index: 2;
+
+    text-align: center;
+
+    margin-bottom: 60px;
+}
+
+
+.section-heading .section-label {
+
+    display: inline-block;
+
+    padding: 8px 17px;
+
+    border-radius: 30px;
+
+    background: #dbeafe;
+
+    color: #2563eb;
+
+    font-size: 12px;
+
+    font-weight: 800;
+
+    letter-spacing: 2px;
+
+    box-shadow:
+        0 6px 20px rgba(96,165,250,0.15);
+}
+
+
+.section-heading h2 {
+
+    margin-top: 15px;
+
+    color: #334155;
+
+    font-size: clamp(30px, 4vw, 44px);
+
+    font-weight: 800;
+}
+
+
+/* =====================================================
+   SIX STEP GRID
+===================================================== */
+
+.guide-grid {
+
+    position: relative;
+
+    z-index: 2;
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(3, 1fr);
+
+    gap: 28px;
+}
+
+
+/* =====================================================
+   STEP CARD
+===================================================== */
+
+.guide-card {
+
+    position: relative;
+
+    min-height: 285px;
+
+    padding: 38px 30px 32px;
+
+    border-radius: 25px;
+
+    text-align: center;
+
+    border: 1px solid rgba(255,255,255,0.90);
+
+    box-shadow:
+        0 12px 35px rgba(100,116,139,0.10);
+
+    overflow: hidden;
+
+    transition:
+        transform 0.4s cubic-bezier(.2,.8,.2,1),
+        box-shadow 0.4s ease;
+
+    animation:
+        cardAppear 0.7s ease both;
+}
+
+
+/* =====================================================
+   PASTEL CARD COLORS
+===================================================== */
+
+
+/* 01 - BLUE */
+
+.guide-card:nth-child(1) {
+
+    background: #e0f2fe;
+
+    animation-delay: 0.1s;
+}
+
+.guide-card:nth-child(1) .guide-icon {
+
+    background: #bae6fd;
+
+    color: #0369a1;
+}
+
+
+/* 02 - PURPLE */
+
+.guide-card:nth-child(2) {
+
+    background: #f3e8ff;
+
+    animation-delay: 0.2s;
+}
+
+.guide-card:nth-child(2) .guide-icon {
+
+    background: #e9d5ff;
+
+    color: #7e22ce;
+}
+
+
+/* 03 - GREEN */
+
+.guide-card:nth-child(3) {
+
+    background: #dcfce7;
+
+    animation-delay: 0.3s;
+}
+
+.guide-card:nth-child(3) .guide-icon {
+
+    background: #bbf7d0;
+
+    color: #15803d;
+}
+
+
+/* 04 - YELLOW */
+
+.guide-card:nth-child(4) {
+
+    background: #fef9c3;
+
+    animation-delay: 0.4s;
+}
+
+.guide-card:nth-child(4) .guide-icon {
+
+    background: #fef08a;
+
+    color: #a16207;
+}
+
+
+/* 05 - PEACH */
+
+.guide-card:nth-child(5) {
+
+    background: #ffedd5;
+
+    animation-delay: 0.5s;
+}
+
+.guide-card:nth-child(5) .guide-icon {
+
+    background: #fed7aa;
+
+    color: #c2410c;
+}
+
+
+/* 06 - PINK */
+
+.guide-card:nth-child(6) {
+
+    background: #fce7f3;
+
+    animation-delay: 0.6s;
+}
+
+.guide-card:nth-child(6) .guide-icon {
+
+    background: #fbcfe8;
+
+    color: #be185d;
+}
+
+
+/* =====================================================
+   CARD HOVER
+===================================================== */
+
+.guide-card:hover {
+
+    transform:
+        translateY(-12px)
+        scale(1.02);
+
+    box-shadow:
+        0 25px 50px rgba(71,85,105,0.16);
+}
+
+
+/* =====================================================
+   CARD SHINE
+===================================================== */
+
+.guide-card::before {
+
+    content: "";
+
+    position: absolute;
+
+    top: 0;
+
+    left: -120%;
+
+    width: 70%;
+
+    height: 100%;
+
+    background:
+        linear-gradient(
+            90deg,
+            transparent,
+            rgba(255,255,255,0.45),
+            transparent
+        );
+
+    transform: skewX(-20deg);
+
+    transition:
+        left 0.7s ease;
+
+    pointer-events: none;
+}
+
+
+.guide-card:hover::before {
+
+    left: 150%;
+}
+
+
+/* =====================================================
+   STEP NUMBER
+===================================================== */
+
+.guide-number {
+
+    position: absolute;
+
+    top: 18px;
+
+    right: 20px;
+
+    padding: 7px 12px;
+
+    border-radius: 20px;
+
+    background:
+        rgba(255,255,255,0.65);
+
+    backdrop-filter: blur(8px);
+
+    color: #64748b;
+
+    font-size: 12px;
+
+    font-weight: 900;
+
+    letter-spacing: 1px;
+}
+
+
+/* =====================================================
+   ICON
+===================================================== */
+
+.guide-icon {
+
+    width: 76px;
+
+    height: 76px;
+
+    margin: 10px auto 24px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    border-radius: 22px;
+
+    font-size: 28px;
+
+    box-shadow:
+        0 8px 20px rgba(71,85,105,0.08);
+
+    animation:
+        iconFloat 4s ease-in-out infinite;
+
+    transition:
+        transform 0.4s ease,
+        box-shadow 0.4s ease;
+}
+
+
+/* Different icon timing */
+
+.guide-card:nth-child(2) .guide-icon {
+    animation-delay: .5s;
+}
+
+.guide-card:nth-child(3) .guide-icon {
+    animation-delay: 1s;
+}
+
+.guide-card:nth-child(4) .guide-icon {
+    animation-delay: 1.5s;
+}
+
+.guide-card:nth-child(5) .guide-icon {
+    animation-delay: 2s;
+}
+
+.guide-card:nth-child(6) .guide-icon {
+    animation-delay: 2.5s;
+}
+
+
+/* Icon hover */
+
+.guide-card:hover .guide-icon {
+
+    transform:
+        translateY(-6px)
+        rotate(-6deg)
+        scale(1.1);
+
+    box-shadow:
+        0 12px 25px rgba(71,85,105,0.15);
+}
+
+
+/* =====================================================
+   CARD TEXT
+===================================================== */
+
+.guide-card h3 {
+
+    position: relative;
+
+    z-index: 2;
+
+    margin-bottom: 12px;
+
+    color: #334155;
+
+    font-size: 20px;
+
+    font-weight: 800;
+}
+
+
+.guide-card p {
+
+    position: relative;
+
+    z-index: 2;
+
+    color: #64748b;
+
+    font-size: 14px;
+
+    line-height: 1.7;
+}
+
+
+/* =====================================================
+   START RESERVATION BUTTON
+===================================================== */
+
+.page-action {
+
+    position: relative;
+
+    z-index: 3;
+
+    display: flex;
+
+    justify-content: center;
+
+    margin-top: 65px;
+}
+
+
+.page-action .btn {
+
+    display: inline-flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 10px;
+
+    padding: 16px 30px;
+
+    border-radius: 14px;
+
+    background:
+        linear-gradient(
+            135deg,
+            #60a5fa,
+            #818cf8
+        );
+
+    color: white;
+
+    font-weight: 800;
+
+    text-decoration: none;
+
+    box-shadow:
+        0 12px 30px rgba(96,165,250,0.30);
+
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease;
+}
+
+
+.page-action .btn:hover {
+
+    transform:
+        translateY(-5px)
+        scale(1.03);
+
+    box-shadow:
+        0 18px 40px rgba(96,165,250,0.40);
+}
+
+
+/* =====================================================
+   ANIMATIONS
+===================================================== */
+
+@keyframes cardAppear {
+
+    from {
+
+        opacity: 0;
+
+        transform:
+            translateY(40px)
+            scale(0.95);
+    }
+
+    to {
+
+        opacity: 1;
+
+        transform:
+            translateY(0)
+            scale(1);
+    }
+}
+
+
+@keyframes iconFloat {
+
+    0%,
+    100% {
+
+        transform:
+            translateY(0);
+    }
+
+    50% {
+
+        transform:
+            translateY(-5px);
+    }
+}
+
+
+@keyframes pastelFloatOne {
+
+    0%,
+    100% {
+
+        transform:
+            translate(0,0)
+            scale(1);
+    }
+
+    50% {
+
+        transform:
+            translate(45px,-25px)
+            scale(1.12);
+    }
+}
+
+
+@keyframes pastelFloatTwo {
+
+    0%,
+    100% {
+
+        transform:
+            translate(0,0)
+            scale(1);
+    }
+
+    50% {
+
+        transform:
+            translate(-35px,-30px)
+            scale(1.10);
+    }
+}
+
+
+@keyframes heroBubbleOne {
+
+    0%,
+    100% {
+
+        transform:
+            translate(0,0)
+            scale(1);
+    }
+
+    50% {
+
+        transform:
+            translate(35px,25px)
+            scale(1.10);
+    }
+}
+
+
+@keyframes heroBubbleTwo {
+
+    0%,
+    100% {
+
+        transform:
+            translate(0,0)
+            scale(1);
+    }
+
+    50% {
+
+        transform:
+            translate(-30px,-25px)
+            scale(1.08);
+    }
+}
+
+
+@keyframes heroContent {
+
+    from {
+
+        opacity: 0;
+
+        transform:
+            translateY(25px);
+    }
+
+    to {
+
+        opacity: 1;
+
+        transform:
+            translateY(0);
+    }
+}
+
+
+/* =====================================================
+   TABLET
+===================================================== */
+
+@media (max-width: 900px) {
+
+    .guide-grid {
+
+        grid-template-columns:
+            repeat(2, 1fr);
+    }
+
+}
+
+
+/* =====================================================
+   MOBILE
+===================================================== */
+
+@media (max-width: 600px) {
+
+    .inner-page-hero {
+
+        min-height: 400px;
+
+        padding:
+            70px 20px;
+    }
+
+
+    .inner-page-content h1 {
+
+        font-size: 42px;
+
+        letter-spacing: -1px;
+    }
+
+
+    .inner-page-content p {
+
+        font-size: 15px;
+    }
+
+
+    .page-content {
+
+        padding:
+            60px 20px 80px;
+    }
+
+
+    .guide-grid {
+
+        grid-template-columns: 1fr;
+
+        gap: 20px;
+    }
+
+
+    .guide-card {
+
+        min-height: 250px;
+    }
+
+
+    .section-heading {
+
+        margin-bottom: 40px;
+    }
+
+
+    .section-heading h2 {
+
+        font-size: 30px;
+    }
+
+
+    .page-action .btn {
+
+        width: 100%;
+    }
+
+}
+</style>
+
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+
+    <header class="main-header">
+
+        <div class="navbar">
+
+            <a href="../home.html" class="brand">
+
+                <div class="brand-logo">
+
+                    <img
+                        src="../picture/images.jpg"
+                        alt="LGU Dapa Logo"
+                        onerror="this.style.display='none'; document.getElementById('fallbackLogo').style.display='flex';">
+
+                    <div id="fallbackLogo" class="fallback-logo">
+
+                        <i class="fa-solid fa-building-columns"></i>
+
+                    </div>
+
+                </div>
+
+                <div class="brand-text">
+
+                    <h2>LGU DAPA</h2>
+
+                    <p>
+                        Facilities & Equipment Reservation
+                    </p>
+
+                </div>
+
+            </a>
+
+
+             <nav class="navigation">
+
+                <a href="../home.html" class="nav-link">
+                              Home
+                </a>
+
+                <a href="how-to-reserve.html"
+                  class="nav-link active">
+                      How to Reserve
+                 </a>
+
+                <a href="about.html" class="nav-link">
+                        About Us
+                 </a>
+
+                <a href="contact.html" class="nav-link">
+                         Contact
+               </a>
+
+            </nav>
+
+            <div class="nav-buttons">
+
+                <button
+                    type="button"
+                    class="btn btn-outline login"
+                    onclick="showLogin()">
+
+                    <i class="fa-solid fa-right-to-bracket"></i>
+                    <span>Login</span>
+
+                </button>
+
+
+                <button
+                    type="button"
+                    class="btn btn-primary register"
+                    onclick="showRegister()">
+
+                    <i class="fa-solid fa-user-plus"></i>
+                    <span>Register</span>
+
+                </button>
+
+            </div>
+
+
+            <button
+                type="button"
+                class="mobile-menu-button"
+                onclick="toggleMobileMenu()"
+                aria-label="Open navigation menu">
+
+                <i class="fa-solid fa-bars"></i>
+
+            </button>
+
+        </div>
+
+    </header>
+
+
+    <!-- PAGE HERO -->
+
+    <section class="inner-page-hero">
+
+        <div class="inner-page-content">
+
+            <span class="section-label">
+                RESERVATION GUIDE
+            </span>
+
+            <h1>
+                How to Reserve
+            </h1>
+
+            <p>
+                Follow these simple steps to reserve an LGU Dapa
+                facility or equipment.
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <!-- STEPS -->
+
+    <main class="page-content">
+
+        <section class="guide-section">
+
+            <div class="section-heading">
+
+                <span class="section-label">
+                    SIMPLE PROCESS
+                </span>
+
+                <h2>
+                    Reserve in Six Easy Steps
+                </h2>
+
+            </div>
+
+
+            <div class="guide-grid">
+
+                <article class="guide-card">
+
+                    <div class="guide-number">
+                        01
+                    </div>
+
+                    <div class="guide-icon">
+                        <i class="fa-solid fa-user-plus"></i>
+                    </div>
+
+                    <h3>
+                        Register an Account
+                    </h3>
+
+                    <p>
+                        Register an account if you are a new user.
+                    </p>
+
+                </article>
+
+
+                <article class="guide-card">
+
+                    <div class="guide-number">
+                        02
+                    </div>
+
+                    <div class="guide-icon">
+                        <i class="fa-solid fa-right-to-bracket"></i>
+                    </div>
+
+                    <h3>
+                        Login
+                    </h3>
+
+                    <p>
+                        Login using your registered account.
+                    </p>
+
+                </article>
+
+
+                <article class="guide-card">
+
+                    <div class="guide-number">
+                        03
+                    </div>
+
+                    <div class="guide-icon">
+                        <i class="fa-solid fa-building"></i>
+                    </div>
+
+                    <h3>
+                        Choose a Resource
+                    </h3>
+
+                    <p>
+                        Choose a facility or equipment.
+                    </p>
+
+                </article>
+
+
+                <article class="guide-card">
+
+                    <div class="guide-number">
+                        04
+                    </div>
+
+                    <div class="guide-icon">
+                        <i class="fa-solid fa-calendar-days"></i>
+                    </div>
+
+                    <h3>
+                        Select Schedule
+                    </h3>
+
+                    <p>
+                        Select your preferred date and time.
+                    </p>
+
+                </article>
+
+
+                <article class="guide-card">
+
+                    <div class="guide-number">
+                        05
+                    </div>
+
+                    <div class="guide-icon">
+                        <i class="fa-solid fa-paper-plane"></i>
+                    </div>
+
+                    <h3>
+                        Submit Reservation
+                    </h3>
+
+                    <p>
+                        Submit your reservation request.
+                    </p>
+
+                </article>
+
+
+                <article class="guide-card">
+
+                    <div class="guide-number">
+                        06
+                    </div>
+
+                    <div class="guide-icon">
+                        <i class="fa-solid fa-circle-check"></i>
+                    </div>
+
+                    <h3>
+                        Wait for Approval
+                    </h3>
+
+                    <p>
+                        Wait for LGU staff approval.
+                    </p>
+
+                </article>
+
+            </div>
+
+
+            <div class="page-action">
+
+                <a
+                          href="../home.html"
+                       class="btn btn-primary">
+                    
+                    <i class="fa-solid fa-calendar-check"></i>
+
+                    Start a Reservation
+
+                </a>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- POPUP -->
+
+    <div id="popup"
+        class="popup-overlay"
+        aria-hidden="true">
+
+        <div class="popup-box"
+            role="dialog"
+            aria-modal="true">
+
+            <button
+                type="button"
+                class="popup-close"
+                onclick="closePopup()">
+
+                <i class="fa-solid fa-xmark"></i>
+
+            </button>
+
+            <div id="popupContent"></div>
+
+        </div>
+
+    </div>
+
+
+    <div id="here" hidden></div>
+
+    <script src="../script.js"></script>
+</body>
+
+</html>
