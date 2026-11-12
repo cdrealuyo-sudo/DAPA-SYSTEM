@@ -1,0 +1,868 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0">
+
+    <meta name="description"
+        content="LGU Dapa Facilities and Equipment Reservation System">
+
+    <title>
+        LGU Dapa | Home
+    </title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+</head>
+
+<body>
+
+    <!-- ========================================
+         HEADER / NAVBAR
+    ========================================= -->
+
+    <header class="main-header">
+
+        <div class="navbar">
+
+            <!-- LOGO -->
+
+            <a href="home.html" class="brand">
+
+                <div class="brand-logo">
+
+                    <img
+                        src="picture/images.jpg"
+                        alt="LGU Dapa Logo"
+                        onerror="this.style.display='none'; document.getElementById('fallbackLogo').style.display='flex';">
+
+                    <div
+                        id="fallbackLogo"
+                        class="fallback-logo">
+
+                        <i class="fa-solid fa-building-columns"></i>
+
+                    </div>
+
+                </div>
+
+                <div class="brand-text">
+
+                    <h2>LGU DAPA</h2>
+
+                    <p>
+                        Facilities & Equipment Reservation
+                    </p>
+
+                </div>
+
+            </a>
+
+
+            <!-- NAVIGATION -->
+
+            <nav
+                class="navigation"
+                id="navigation">
+
+                <a
+                    href="home.html"
+                    class="nav-link active">
+
+                    Home
+
+                </a>
+
+                <a
+                    href="pages/how-to-reserve.html"
+                    class="nav-link">
+
+                    How to Reserve
+
+                </a>
+
+                <a
+                    href="pages/about.html"
+                    class="nav-link">
+
+                    About Us
+
+                </a>
+
+                <a
+                    href="pages/contact.html"
+                    class="nav-link">
+
+                    Contact
+
+                </a>
+
+            </nav>
+
+
+            <!-- LOGIN / REGISTER -->
+
+            <div class="nav-buttons">
+
+                <button
+                    type="button"
+                    class="btn btn-outline login"
+                    onclick="showLogin()">
+
+                    <i class="fa-solid fa-right-to-bracket"></i>
+
+                    <span>Login</span>
+
+                </button>
+
+
+                <button
+                    type="button"
+                    class="btn btn-primary register"
+                    onclick="showRegister()">
+
+                    <i class="fa-solid fa-user-plus"></i>
+
+                    <span>Register</span>
+
+                </button>
+
+            </div>
+
+
+            <!-- MOBILE MENU -->
+
+            <button
+                type="button"
+                class="mobile-menu-button"
+                id="mobileMenuButton"
+                onclick="toggleMobileMenu()"
+                aria-label="Open navigation menu">
+
+                <i class="fa-solid fa-bars"></i>
+
+            </button>
+
+        </div>
+
+    </header>
+
+
+    <!-- ========================================
+         MAIN CONTENT
+    ========================================= -->
+
+    <main>
+
+
+        <!-- ========================================
+             HERO
+        ========================================= -->
+
+        <section
+            class="hero"
+            id="home">
+
+            <div class="hero-decoration hero-circle-one"></div>
+
+            <div class="hero-decoration hero-circle-two"></div>
+
+
+            <div class="hero-container">
+
+
+                <!-- HERO TEXT -->
+
+                <div class="hero-content">
+
+                    <div class="hero-badge">
+
+                        <span class="badge-icon">
+
+                            <i class="fa-solid fa-building-columns"></i>
+
+                        </span>
+
+                        Official LGU Dapa Reservation Portal
+
+                    </div>
+
+
+                    <h1>
+
+                        Reserve LGU Facilities
+
+                        <span>
+                            & Equipment
+                        </span>
+
+                        with Ease
+
+                    </h1>
+
+
+                    <p class="hero-description">
+
+                        A convenient online reservation system for
+                        residents of Dapa. Check available municipal
+                        resources, submit your reservation request,
+                        and manage bookings easily.
+
+                    </p>
+
+
+
+                    <div class="hero-info">
+
+                        <div class="hero-info-item">
+
+                            <div class="hero-info-icon">
+
+                                <i class="fa-solid fa-circle-check"></i>
+
+                            </div>
+
+                            <div>
+
+                                <strong>
+                                    Easy Process
+                                </strong>
+
+                                <span>
+                                    Simple online reservation
+                                </span>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="hero-info-item">
+
+                            <div class="hero-info-icon">
+
+                                <i class="fa-solid fa-clock"></i>
+
+                            </div>
+
+                            <div>
+
+                                <strong>
+                                    Fast Access
+                                </strong>
+
+                                <span>
+                                    Available anytime online
+                                </span>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- HERO IMAGE -->
+
+                <div class="hero-image-wrapper">
+
+                    <div class="hero-image-card">
+
+                        <img
+                            src="picture/Dapa-Municipal-Hall.webp"
+                            alt="Dapa Municipal Hall"
+                            onerror="this.style.display='none'; document.getElementById('heroPlaceholder').style.display='flex';">
+
+
+                        <div
+                            id="heroPlaceholder"
+                            class="hero-placeholder">
+
+                            <i class="fa-solid fa-building-columns"></i>
+
+                            <span>
+                                Dapa Municipal Hall
+                            </span>
+
+                        </div>
+
+
+                        <div class="hero-image-overlay">
+
+                            <div class="location-icon">
+
+                                <i class="fa-solid fa-location-dot"></i>
+
+                            </div>
+
+                            <div>
+
+                                <small>
+                                    Municipality of
+                                </small>
+
+                                <strong>
+                                    Dapa, Surigao del Norte
+                                </strong>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="floating-card floating-card-top">
+
+                        <div class="floating-icon success">
+
+                            <i class="fa-solid fa-calendar-check"></i>
+
+                        </div>
+
+                        <div>
+
+                            <span>
+                                Reservation
+                            </span>
+
+                            <strong>
+                                Made Simple
+                            </strong>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="floating-card floating-card-bottom">
+
+                        <div class="floating-icon primary">
+
+                            <i class="fa-solid fa-shield-halved"></i>
+
+                        </div>
+
+                        <div>
+
+                            <span>
+                                Managed by
+                            </span>
+
+                            <strong>
+                                LGU Dapa
+                            </strong>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+         
+
+        <style>
+/* =====================================================
+   OBJECTIVES - PASTEL CARD DESIGN
+===================================================== */
+
+.objectives {
+    padding: 90px 5% !important;
+    background: #ffffff !important;
+}
+
+.objectives .section-container {
+    max-width: 1200px !important;
+    margin: 0 auto !important;
+}
+
+.objectives .section-heading {
+    text-align: center !important;
+    max-width: 760px !important;
+    margin: 0 auto 55px !important;
+}
+
+.objectives .section-label {
+    display: inline-block !important;
+    color: #1685df !important;
+    font-size: 14px !important;
+    font-weight: 700 !important;
+    letter-spacing: 1.5px !important;
+    margin-bottom: 12px !important;
+}
+
+.objectives .section-heading h2 {
+    color: #102a5c !important;
+    font-size: 38px !important;
+    font-weight: 700 !important;
+    margin-bottom: 15px !important;
+}
+
+.objectives .section-heading p {
+    color: #64748b !important;
+    font-size: 16px !important;
+    line-height: 1.7 !important;
+}
+
+
+/* CARD GRID */
+
+.objectives .objective-grid {
+    display: grid !important;
+    grid-template-columns: repeat(4, 1fr) !important;
+    gap: 28px !important;
+}
+
+
+/* ALL CARDS */
+
+.objectives .objective-card {
+    min-height: 390px !important;
+    padding: 55px 28px 35px !important;
+
+    border-radius: 24px !important;
+    border: 1px solid rgba(255,255,255,0.9) !important;
+
+    text-align: center !important;
+
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+
+    box-shadow: 0 8px 25px rgba(15,23,42,0.04) !important;
+
+    transition: transform 0.3s ease,
+                box-shadow 0.3s ease !important;
+}
+
+
+/* =====================================================
+   PASTEL COLORS
+===================================================== */
+
+/* 01 BLUE */
+
+.objectives .objective-card:nth-child(1) {
+    background: #e2f3ff !important;
+}
+
+
+/* 02 PURPLE */
+
+.objectives .objective-card:nth-child(2) {
+    background: #f1e4ff !important;
+}
+
+
+/* 03 GREEN */
+
+.objectives .objective-card:nth-child(3) {
+    background: #e1faeb !important;
+}
+
+
+/* 04 PINK */
+
+.objectives .objective-card:nth-child(4) {
+    background: #fbe6f3 !important;
+}
+
+
+/* =====================================================
+   ICON BOXES
+===================================================== */
+
+.objectives .objective-icon {
+    width: 78px !important;
+    height: 78px !important;
+
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+
+    border-radius: 20px !important;
+
+    font-size: 30px !important;
+
+    margin: 0 auto 28px !important;
+}
+
+
+/* BLUE */
+
+.objectives .objective-card:nth-child(1) .objective-icon {
+    background: #c4eaff !important;
+    color: #0879bd !important;
+}
+
+
+/* PURPLE */
+
+.objectives .objective-card:nth-child(2) .objective-icon {
+    background: #e1caff !important;
+    color: #7625d1 !important;
+}
+
+
+/* GREEN */
+
+.objectives .objective-card:nth-child(3) .objective-icon {
+    background: #c2f4d5 !important;
+    color: #078b45 !important;
+}
+
+
+/* PINK */
+
+.objectives .objective-card:nth-child(4) .objective-icon {
+    background: #f8c9e3 !important;
+    color: #c21d70 !important;
+}
+
+
+/* =====================================================
+   TEXT
+===================================================== */
+
+.objectives .objective-card h3 {
+    color: #24385d !important;
+    font-size: 20px !important;
+    font-weight: 700 !important;
+
+    margin: 0 0 14px !important;
+
+    line-height: 1.3 !important;
+}
+
+.objectives .objective-card p {
+    color: #64748b !important;
+    font-size: 14px !important;
+    line-height: 1.8 !important;
+
+    margin: 0 !important;
+}
+
+
+/* =====================================================
+   HOVER
+===================================================== */
+
+.objectives .objective-card:hover {
+    transform: translateY(-8px) !important;
+    box-shadow: 0 20px 40px rgba(15,23,42,0.10) !important;
+}
+
+
+/* =====================================================
+   RESPONSIVE
+===================================================== */
+
+@media (max-width: 1000px) {
+
+    .objectives .objective-grid {
+        grid-template-columns: repeat(2, 1fr) !important;
+    }
+
+}
+
+
+@media (max-width: 600px) {
+
+    .objectives {
+        padding: 70px 5% !important;
+    }
+
+    .objectives .section-heading h2 {
+        font-size: 30px !important;
+    }
+
+    .objectives .objective-grid {
+        grid-template-columns: 1fr !important;
+    }
+
+}
+</style>
+
+
+
+
+        <!-- ========================================
+             OBJECTIVES
+        ========================================= -->
+
+        <section class="objectives">
+
+            <div class="section-container">
+
+                <div class="section-heading">
+
+                    <span class="section-label">
+                        OUR OBJECTIVES
+                    </span>
+
+                    <h2>
+                        What We Aim to Achieve
+                    </h2>
+
+                    <p>
+                        Providing residents and LGU personnel with
+                        a more organized and convenient reservation
+                        experience.
+                    </p>
+
+                </div>
+
+
+                <div class="objective-grid">
+
+
+                    <article class="objective-card">
+
+                        <div class="objective-icon">
+
+                            <i class="fa-solid fa-users"></i>
+
+                        </div>
+
+                        <h3>
+                            User-Friendly Portal
+                        </h3>
+
+                        <p>
+                            Provide residents with an easy-to-use
+                            online portal for viewing and reserving
+                            municipal resources.
+                        </p>
+
+                    </article>
+
+
+                    <article class="objective-card">
+
+                        <div class="objective-icon">
+
+                            <i class="fa-solid fa-calendar-days"></i>
+
+                        </div>
+
+                        <h3>
+                            Resource Availability
+                        </h3>
+
+                        <p>
+                            Allow residents to conveniently see
+                            available facilities and equipment before
+                            submitting requests.
+                        </p>
+
+                    </article>
+
+
+                    <article class="objective-card">
+
+                        <div class="objective-icon">
+
+                            <i class="fa-solid fa-user-check"></i>
+
+                        </div>
+
+                        <h3>
+                            Efficient Management
+                        </h3>
+
+                        <p>
+                            Help LGU staff organize, approve, and
+                            reject reservation requests efficiently.
+                        </p>
+
+                    </article>
+
+
+                    <article class="objective-card">
+
+                        <div class="objective-icon">
+
+                            <i class="fa-solid fa-chart-line"></i>
+
+                        </div>
+
+                        <h3>
+                            Useful Reports
+                        </h3>
+
+                        <p>
+                            Generate reservation summaries that
+                            provide an overview of resource requests.
+                        </p>
+
+                    </article>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ========================================
+             CTA
+        ========================================= -->
+
+        <section class="cta-section">
+
+            <div class="cta-card">
+
+
+                <div class="cta-icon">
+
+                    <i class="fa-solid fa-calendar-check"></i>
+
+                </div>
+
+
+                <div class="cta-content">
+
+                    <span>
+                        READY TO GET STARTED?
+                    </span>
+
+                    <h2>
+                        Reserve a Municipal Resource Today
+                    </h2>
+
+                    <p>
+                        Login or create an account to browse
+                        facilities and equipment available through
+                        LGU Dapa.
+                    </p>
+
+                </div>
+
+
+                <button
+                    type="button"
+                    class="cta-button"
+                    onclick="handleGetStarted()">
+
+                    Get Started
+
+                    <i class="fa-solid fa-arrow-right"></i>
+
+                </button>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- ========================================
+         FOOTER
+    ========================================= -->
+
+    <footer class="footer">
+
+        <div class="footer-container">
+
+
+            <div class="footer-brand">
+
+                <div class="footer-logo">
+
+                    <i class="fa-solid fa-building-columns"></i>
+
+                </div>
+
+
+                <div>
+
+                    <h3>
+                        LGU Dapa
+                    </h3>
+
+                    <p>
+                        Facilities & Equipment Reservation System
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <p class="footer-copy">
+
+                &copy;
+
+                <span id="currentYear"></span>
+
+                Local Government Unit of Dapa.
+
+                All rights reserved.
+
+            </p>
+
+        </div>
+
+    </footer>
+
+
+    <!-- ========================================
+         GENERAL POPUP
+    ========================================= -->
+
+    <div
+        id="popup"
+        class="popup-overlay"
+        aria-hidden="true">
+
+        <div
+            class="popup-box"
+            role="dialog"
+            aria-modal="true"
+            aria-labelledby="popupTitle">
+
+            <button
+                type="button"
+                class="popup-close"
+                onclick="closePopup()"
+                aria-label="Close popup">
+
+                <i class="fa-solid fa-xmark"></i>
+
+            </button>
+
+
+            <div id="popupContent"></div>
+
+        </div>
+
+    </div>
+
+
+    <!-- Required JavaScript output element -->
+
+    <div id="here" hidden></div>
+
+
+    <!-- JAVASCRIPT -->
+
+    <script src="script.js?v=5"></script>
+
+</body>
+
+</html>
